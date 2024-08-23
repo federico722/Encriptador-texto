@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="menu__elementos__texto">
+
+        <section class="seccion__texto__contenido">
+            <img class="logo__alura" src="./assets/Logo.png" width="120px" height="48px" alt="logo de alura latam ">
+
+            <textarea placeholder="Ingrese el texto aqui" type="text" id="texArea__1" class="titulo__texto"></textarea>
+
+
+            <div class="contenedor__seccion__advertencia___y__botones">
+                <div class="texto__advertencia">
+                    <img width="24px" height="16px" class="icono__advertencia" src="./assets/bi_exclamation-circle-fill.png" alt="icono-advertencia">
+                    <p class="texto__interno__advertencia">Solo las letras minúsculas y sin acentos </p>
+                </div>
+    
+                <div class="btn__contenedor">
+                    <button onclick="oneClickEncriptar()" class="btn__encriptar" >Encriptar</button>
+                    <button onclick="oneClickDesencriptar()" class="btn__desencriptar">Desencriptar</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="seccion__texto_encriptado__desencriptado">
+            
+            <div id="contenedor__elementos__desincriptador"  class="contenedor__seccion__encriptador">
+                <img class="hidden__element ocultar__elemento__css" src="./assets/Muñeco.png" alt="Muñeco">
+                <h2  class="titulo__interno_encriptado_desencriptado hidden__element">Ningún mensaje fue encontrado</h2>
+                <p  class="texto__interno_mensaje hidden__element" >Ingresa el texto que desees encriptar o desencriptar.</p>
+
+                <textarea  placeholder="" id="area__presentacion__texto" class="view__element copiarTexto" showElement ="false" type="text" hidden></textarea>
+
+                <button onclick="copyText()" class="btn__copiar view__element" hidden>Copiar</button>
+            </div>
+          
+        </section>
+    </main>
+    <footer></footer>
+    
+    <script type="module" src="./script/app.js"></script>
+</body>
+</html>
